@@ -1,0 +1,25 @@
+#Iterating through both keys and values in dictionaries
+cast = {
+           "Jerry Seinfeld": "Jerry Seinfeld",
+           "Julia Louis-Dreyfus": "Elaine Benes",
+           "Jason Alexander": "George Costanza",
+           "Michael Richards": "Cosmo Kramer"
+       }
+for key, value in cast.items():
+    print("Actor: {}    Role: {}".format(key, value))
+#Will output tuples of key, value pairs
+
+#Creating arrays in NumPy
+import numpy as np
+x = np.array([1, 2, 3, 4, 5])
+
+#Find datatype of x array:
+x.dytpe
+#Find shape of an array (length for 1-D, tuple for 2-D):
+x.shape
+#Find number of elements included in an array:
+x.size
+
+#Saving NumPy array to file:
+x = np.array([1, 2, 3, 4, 5])
+np.save('my_array', x)
